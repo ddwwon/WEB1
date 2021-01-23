@@ -3,15 +3,15 @@
 <head>
   <title>WEB1 - CSS</title>
   <meta charset="utf-8">
-  <!--style: 이거는 css태그니까 css에 맞게 처리해야돼 라는 뜻 -->
   <style>
-    /* a: a태그에 대해서 */
-    /* a {}: 선택자, 어느 부분에 css를 줄 것인지  */
     a {
-      /* 선언 */
       color: skyblue;
-      /* 장식이 없다: 밑줄을 지우고 싶을 때 */
       text-decoration: none;
+    }
+    /* 내가 방문했던 페이지들만 글자색 바뀌게 하는 것
+    .saw: 이 웹페이지에 있는 모든 클래스가 소우인 태그를 가르키는 선택자가 됨 */
+    .saw{
+      color: darkcyan;
     }
     h1 {
       font-size: 60px;
@@ -22,11 +22,11 @@
 <body>
   <h1><a href="index.html">WEB</a></h1>
   <ol>
-    <li><a href="1.html">HTML</a></li>
-    <li><a href="2.html" 
-      style="color: blue; text-decoration: underline" >CSS</a></li> <!--여기에 있는 style은 html의 속성이고 "color" 이 부분은 css의 속성-->
-      <!-- 이부분만 밑줄을 긋고 싶을 때 사용 -->
-    <li><a href="3.html">JavaScript</a></li>
+    <!-- class: html의 속성 -->
+    <li><a href="1.html" class="saw">HTML</a></li>
+    <li><a href="2.html" class="saw">CSS</a></li>
+    <li><a href="3.html" >JavaScript</a></li>
+
   </ol>
   <h2>CSS</h2>
   <p>
