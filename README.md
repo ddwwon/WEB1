@@ -1,2 +1,2 @@
 # WEB1
-html study
+WEB study
