@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <style>
+        #grid{
+            border:5px solid pink;
+            display: grid;
+            /* 1fr: 나머지 공간을 다 쓴다 */
+            grid-template-columns: 2fr 1fr;
+        }
+        div{
+            border:5px solid blue;
+        }
+        </style>
+    </head>
+    <body>
+        <!-- div: 아무런 용도가 없고 단지 디자인의 용도로만, 무색, block -->
+        <!-- span: inline -->
+        <!-- <div>NAVIGATION</div>
+        <div>ARTICLE</div> -->
+        <div id = "grid">
+            <div>NAVIGATION</div>
+            <div>ARTICLE</div>
+        </div>
+    </body>
+</html>
