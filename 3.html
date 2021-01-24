@@ -11,6 +11,7 @@
   <input type="button" value="night" onclick="
   // js 코드
   // search: js select tag by css selector
+  // 대소문자 구분 중요...
   document.querySelector('body').style.backgroundColor='black';
   // 텍스트 컬러
   document.querySelector('body').style.color='white';
@@ -18,6 +19,18 @@
   <input type="button" value="day" onclick="
   document.querySelector('body').style.backgroundColor= 'white';
   document.querySelector('body').style.color='black';
+  ">
+  <input id = "night_day" type="button" value="night" onclick="
+  // search: js element get value 
+  if (document.querySelector('#night_day').value === 'night'){
+    document.querySelector('body').style.backgroundColor='black';
+    document.querySelector('body').style.color='white';
+    document.querySelector('#night_day').value = 'day';
+  }  else {
+    document.querySelector('body').style.backgroundColor= 'white';
+    document.querySelector('body').style.color='black';
+    document.querySelector('#night_day').value = 'night';
+  }
   ">
 
   <div id = "grid">
