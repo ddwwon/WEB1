@@ -5,15 +5,18 @@
   <meta charset="utf-8">
   <link rel="stylesheet" href="style.css">
 </head>
+<!-- search: js element style, js style backgroundcolor-->
 <body style = "background-color:black;color:white;">
   <h1><a href="index.html">WEB</a></h1>
   <input type="button" value="night" onclick="
+  // js 코드
+  // search: js select tag by css selector
   document.querySelector('body').style.backgroundColor='black';
   document.querySelector('body').style.Color='white';
   ">
   <input type="button" value="day" onclick="
   document.querySelector('body').style.backgroundColor='white';
-  document.querySelector('body').style.Color='black';
+  document.querySelector('#article').style.Color='black';
   ">
   <div id = "grid">
     <ol>
