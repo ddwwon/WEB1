@@ -1,49 +1,13 @@
 <!doctype html>
 <html>
-<head>
+  <head>
   <title>WEB1 - JavaScript</title>
   <meta charset="utf-8">
   <link rel="stylesheet" href="style.css">
-  <script>
-    var Body = {
-      setColor: function (color){
-        document.querySelector('body').style.color= color;
-      },
-      setBackgroundColor: function (color){
-        document.querySelector('body').style.backgroundColor= color;
-      }
-    }
-    var Links = {
-      setColor: function (color){
-      var alist = document.querySelectorAll('a');
-      var i = 0;
-      while(i < alist.length) {
-      alist[i].style.color = 'color'
-      i = i + 1;
-        }
-      }
-    }
-    function nightdayHandler(self){
-    var target = document.querySelector('body');
-      if (self.value === 'night'){
-        Body.setBackgroundColor('black');
-        Body.setColor('white');
-        self.value = 'day';
-        
-        Links.setColor('powerderblue');
-      }  else {
-          Body.setBackgroundColor('white');
-          Body.setColor('black');
-          self.value = 'night';
-
-          Links.setColor('blue');
-      }
-    }
-  </script>
+  <script src = "colors.js"></script>
   </head>
 
   <body style = "background-color:black;color:white;">
-  <!-- search: js get element by css selector multiple -->
     <h1><a href="index.html">WEB</a></h1>
       <input type="button" value="night" onclick="
         nightdayHandler(this);
