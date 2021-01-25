@@ -1,0 +1,26 @@
+<!-- 객체: 이름이 있는 정리정돈 상자 -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <h1>Object</h1>
+        <h2>Create</h2>
+        <script>
+            // 객체는 중괄호, 배열은 대괄호
+            var coworkers = {
+                "humon": "dowon",
+                "animal": "summer"
+            };
+            document.write("humon: "+coworkers.humon+"<br>");
+            document.write("animal: "+coworkers.animal+"<br>");
+            coworkers.bookkeeper = "duu";
+            document.write("bookkeeper: "+coworkers.bookkeeper+"<br>");
+            // 대괄호에 이름을 넣으면 띄어쓰기도 가능
+            coworkers["data scientist"] = "eoo";
+            document.write("data scientist: "+ coworkers["data scientist"]+"<br>");
+
+        </script>
+    </body>
+</html>
