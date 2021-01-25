@@ -5,29 +5,34 @@
   <meta charset="utf-8">
   <link rel="stylesheet" href="style.css">
   <script>
+    function LinksSetColor(color){
+      var alist = document.querySelectorAll('a');
+        var i = 0;
+        while(i < alist.length) {
+        alist[i].style.color = 'color'
+        i = i + 1;
+        }
+    }
+    function BodySetFontColor(color){
+      document.querySelector('body').style.color= color;
+    }
+    function BodySetBackgroundColor(color){
+      document.querySelector('body').style.backgroundColor= color;
+    }
     function nightdayHandler(self){
     var target = document.querySelector('body');
       if (self.value === 'night'){
-      target.style.backgroundColor='black';
-      target.style.color='white';
+      BodySetBackgroundColor('black');
+      BodySetFontColor('white');
         self.value = 'day';
 
-        var alist = document.querySelectorAll('a');
-        var i = 0;
-        while(i < alist.length) {
-        alist[i].style.color = 'powderblue'
-        i = i + 1;
-        }
+        LinksSetColor('powerderblue');
       }  else {
-        target.style.backgroundColor= 'white';
-        target.style.color='black';
+        BodySetBackgroundColor('white');
+        BodySetFontColor('black');
         self.value = 'night';
-        var alist = document.querySelectorAll('a');
-        var i = 0;
-        while(i < alist.length) {
-        alist[i].style.color = 'blue'
-        i = i + 1;
-        }
+
+        LinksSetColor('blue');
       }
     }
   </script>
