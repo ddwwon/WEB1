@@ -1,0 +1,125 @@
+/* css 변수 설정 */
+:root {
+    --text-color: rgb(224, 219, 219);
+    --background-color: cadetblue;
+    --accent-color: gold;
+    --logo-color:lightblue;
+}
+
+body {
+    /* 맨 위에 남는 공간이 없게 */
+    margin: 0;
+    /* 폰트, 구글폰트에서 검색해서 사용 */
+    font-family: 'Hachi Maru Pop';
+}
+
+a {
+    /* 링크 태그에 밑줄이 없어지게 */
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.navbar{
+    /* 한줄에 다 들어오게 */
+    display: flex;
+    /* 스페이스를 사이사이에 들어가게 */
+    justify-content: space-between;
+    /* 수직으로 배치 */
+    align-items: center;
+    background-color: var(--background-color);
+    /* 양 옆에 공간을 줌 */
+    padding: 8px 12px;
+}
+
+.navbar_logo {
+    font-size: 24px;
+    color: var(--text-color);
+}
+
+.navbar_logo i {
+    color: lightblue;
+}
+
+.navbar_menu {
+    display: flex;
+    /* 꾸밈새 삭제 */
+    list-style: none;
+    /* 완전히 중간으로 가게 */
+    padding-left: 0;
+}
+
+/* 커서를 갖다대면 색이 바뀌게 하는 */
+.navbar_menu li:hover {
+    background-color: var(--accent-color);
+    border-radius: 4px;
+  }
+
+.navbar_menu li {
+    /* 메뉴 사이 공백을 넓게  */
+    padding: 8px 12px;
+}
+
+.navbar_icons {
+    list-style: none;
+    color: var(--text-color);
+    display: flex;
+    padding-left: 0px;
+}
+
+.navbar_icons li {
+    padding: 8px 12px;
+}
+
+.navbar_togglebutton {
+    /* 화면이 작아졌을때만 나오도록 */
+    display: none;
+    /* 초기 위치는 좌하단에 위치했지만 그 위치를 벗어나려면 포지션 사용 */
+    position: absolute;
+    right: 32px;
+    font-size: 24px;
+    color: var(--logo-color);
+}
+
+/* 반응형 만들기 */
+@media screen and (max-width: 680px) {
+    .navbar{
+        /* 창의 크기가 줄어들면 밑으로 정렬되게 */
+        flex-direction: column;
+        /* 왼쪽으로 정렬, 로고만 */
+        align-items: flex-start;
+        padding: 8px 24px;
+    }
+
+    .navbar_menu{
+        flex-direction: column;
+        align-items: center;
+        /* 밑에 부분을 해주지 않으면 중앙정렬이 안됨. 왜냐하면 크기가 작기때문엥 */
+        width: 100%;
+        /* 토글버튼을 누르면 나오게 */
+        display: none;
+    }
+
+    .navbar_menu li{
+        width: 100%;
+        /* 너비가 넓어지면서 자동으로 텍스트가 왼쪽으로 정렬되기 때문에 재정렬 필요 */
+        text-align: center;
+    }
+
+    .navbar_icons {
+        justify-content: center;
+        width: 100%;
+        /* 토글버튼을 누르면 나오게 */
+        display: none;
+    }
+
+    /* 창의 크기가 줄었을 때만 토글버튼이 보이도록 */
+    .navbar_togglebutton {
+        display: block;
+    }
+
+    /* active일때는 */
+    .navbar_menu.active,
+    .navbar_icons.active {
+        display: flex;
+    }
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"></link>
+    <title>반응형 헤더 연습</title>
+    <!-- js 파일 연결 -->
+    <!-- defer: js파일을 다 받을때 까지 html이 안열리도록 -->
+    <script src="main.js" defer></script>
+    <!-- 아이콘 불러오는 -->
+    <script src="https://kit.fontawesome.com/05ced5a9d7.js" crossorigin="anonymous"></script>
+    <!-- 폰트 2줄 -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--nav.navbar -->
+    <nav class="navbar">
+        <!-- .navbar_logo -->
+        <div class="navbar_logo">
+            <i class="fas fa-air-freshener"></i>
+            <a href="">dorang</a>
+        </div>
+        
+        <ul class="navbar_menu">
+            <!-- (li>a)*5 + tab키 누르기 -->
+            <li><a href="">Home</a></li>
+            <li><a href="">Gallery</a></li>
+            <li><a href="">Wedding</a></li>
+            <li><a href="">FAQ</a></li>
+            <li><a href="">Bookings</a></li>
+        </ul>
+
+        <ul class="navbar_icons">
+            <!-- font awesome이란 곳에서 아이콘 찾음 -->
+            <li><i class="fab fa-instagram"></i></li>
+            <li><i class="fas fa-hashtag"></i></li>
+        </ul>
+
+        <!-- "#": 버튼을 누르면 계속 현재페이지가 뜨는 것을 방지하기 위해서 -->
+        <a href="#" class="navbar_togglebutton">
+            <i class="fas fa-toggle-on"></i>
+        </a>
+
+    </nav>
+</body>
+</html>
