@@ -125,55 +125,53 @@
 
 ![HTML%205d383360bbe44ed3959832fb1c5315cf/Untitled%202.png](HTML%205d383360bbe44ed3959832fb1c5315cf/Untitled%202.png)
 
-- <!doctype html>
-
+- !doctype html
 : html로 만들어졌다는 것을 표현하기 위해서
 
-- <html></html>
-- <head> </head>
+- html
+- head
 : 본문을 설명하는 부분
 
-- <title> </title>
+- title
 1. 제목 정하기
 2. 검색엔진이 웹페이지를 분석할 때 가장 중요하게 생각하는 태그
 3. 안쓰면 손해
-4. ex) <title>도원</title>
 
--<body> </body>
+-body
 : 본문
 
-- <h1> </h1> ~ <h6></h6>
+- h1 ~ h6
 : 헤더, 글자 크기 조정
 
-- <ol></ol>
+- ol
 : 목차 정렬 가능, 항목이 삭제되어도 자동으로 번호가 정렬됨
 
-- <li></li>
+- li
 1. 목차
 2. li와 ol은 항상 함께 사용
 
--<a></a>
+-a
 1. 링크걸기
 2. ex) <a href="index.html">WEB</a>
 3. ex) <a href="[https://www.w3.org/TR/html5/](https://www.w3.org/TR/html5/)" target="_blank" title="html5 specification">Hypertext Markup Language (HTML)</a>
 4. target="_blank"
 : 링크를 클릭했을 때 새창에서 페이지가 열리게 하는 속성
 
-- <p></p>
+- p
 : 단락 구분, 자동으로 띄어쓰기 됨
 
-- <strong> </strong>
+- strong
 : 진하게 표시하고 싶은 구간을 감싸줄때
 
-- <u></u>
+- u
 : 밑줄 긋기
 
-- <meta charset="utf-8">
+- meta charset="utf-8"
 : utf-8로 만들었기 때문에 utf-8로 열라는 의미
 
-- <p><iframe width="560" height="315" src="[https://www.youtube.com/embed/jSJM9iOiQ1g](https://www.youtube.com/embed/jSJM9iOiQ1g)" frameborder="0" allowfullscreen></iframe> </p>
+- <pre><code><p><iframe width="560" height="315" src="[https://www.youtube.com/embed/jSJM9iOiQ1g](https://www.youtube.com/embed/jSJM9iOiQ1g)" frameborder="0" allowfullscreen></iframe> </p></code></pre>
 : 동영상 삽입
 
-- <br>
+- br
 : 무엇인가를 설명하지 않는 태그들은 감싸야하는 컨텐츠가 없기 때문에 태그를 닫지 않는다
 1. ex) img, input, br, hr, meta
