@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/05ced5a9d7.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Nanum+Gothic+Coding&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <title>Youtube Mobile</title>
+    
 </head>
 <body>
     <!-- 헤더 + 동영상 플레이어 + 정보 + 다음 동영상
@@ -28,26 +32,30 @@
         <!-- 비디오 삽입 -->
         <video controls width="1000" src="video/Ocean.mp4"></video>
     </section>
+
     <!-- Video Info -->
-    <!-- metadata: 데이터에 관한 구조화된 데이터
-    다른 데이터를 설명해 주는 데이터 -->
-    <div class="metadata">
-        <ul class="hastags">
-            <li>#Dorang</li>
-            <li>#CloneCoding</li>
-            <li>#WEB Study</li>
-        </ul>
-        <div class="titleAndButton">
-            <span>
-                > 심신이 편해지는 영상
-            </span>
-            <button class="moreBtn">
-                <i class="fas fa-caret-down"></i>
-            </button>
+    <section class="info">
+        <!-- metadata: 데이터에 관한 구조화된 데이터
+        다른 데이터를 설명해 주는 데이터 -->
+        <div class="metadata">
+            <ul class="hastags">
+                <li>#Dorang</li>
+                <li>#CloneCoding</li>
+                <li>#WEB Study</li>
+            </ul>
+            <div class="titleAndButton">
+                <span>
+                    > 심신이 편해지는 영상
+                </span>
+                <button class="moreBtn">
+                    <i class="fas fa-caret-down"></i>
+                </button>
+            </div>
+            <span class="views">1000만뷰</span>
         </div>
-        <div class="views"></div>
-        <span class="views">1000만뷰</span>
-    </div>
+    </section>
+
+    <!-- Actions -->
     <div class="action"></div>
     <li>
         <button><i class="fas fa-thumbs-up"></i><span>1000개</span></button>
@@ -64,8 +72,50 @@
     <li>
         <button><i class="fas fa-font-awesome-flag"></i><span>오류</span></button>
     </li>
-    <div class="channel"></div>
-    <section class="info"></section>
-    <section class="UpNext"></section>
+    
+    <!-- Channel Description -->
+    <div class="channel">
+        <div class="matadata">
+            <img src="image/하도원.jpg" alt="">
+            <div class="info">
+                <span class="name">Dowon</span>
+                <span class="subscribers">1000명</span>
+            </div>
+        </div>
+        <button class="subscribe">subscribe</button>
+    </div>
+    
+    <section class="UpNext">
+        <span class="title">UpNext</span>
+        <ul>
+            <li class="item">
+                <img src="image/바다.jpeg" alt="">
+                <div class="info">
+                    <span class="title">Sea</span>
+                    <apen class="name">Dowon</apen>
+                    <span class="views">1000</span>
+                </div>
+                <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
+            </li>
+            <li class="item">
+                <img src="image/바다.jpeg" alt="">
+                <div class="info">
+                    <span class="title">Sea</span>
+                    <apen class="name">Dowon</apen>
+                    <span class="views">1000</span>
+                </div>
+                <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
+            </li>
+            <li class="item">
+                <img src="image/바다.jpeg" alt="">
+                <div class="info">
+                    <span class="title">Sea</span>
+                    <apen class="name">Dowon</apen>
+                    <span class="views">1000</span>
+                </div>
+                <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
+            </li>
+        </ul>
+    </section>
 </body>
 </html>

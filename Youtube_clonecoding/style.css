@@ -1,0 +1,60 @@
+:root {
+  /* Color */
+  /* google extention에 있는 color picker를 사용하면 사이트에 쓰인 색이 뭔지 알 수 있음 */
+  --white-color: #fff;
+  --black-color: #140a00;
+  --blue-color: #045fd4;
+  --red-color: #ff0000;
+  --grey-dark-color: #909090;
+  --grey-light-color: #e0e0e0;
+
+  /* Size */
+  --spacing: 12px;
+  --spacing-small: 6px;
+  --avatar-size: 36px;
+
+  /* Font Size */
+  --font-large: 20px;
+  --font-regular: 16px;
+  --font-medium: 14px;
+  --font-small: 12px;
+  --font-micro: 10px;
+}
+
+/* 모든 태그에 적용 */
+* {
+  padding: 0;
+  margin: 0;
+  /* 패딩이나 마진의 사이즈를 줬을 때 그것을 포함하여 박스의 사이즈를 정하도록*/
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Nanum Gothic;
+}
+
+/* Header */
+header {
+  display: flex;
+  /* 유튜브 로고와 검색, 더보기 버튼이 양옆으로 가게 */
+  justify-content: space-between;
+  padding: var(--padding);
+  background-color: var(--black-color);
+  color: var(--white-color);
+}
+
+header .logo {
+  font-size: var(--font-large);
+}
+
+header .logo i {
+  color: var(--red-color);
+}
+
+header .icons .fa-search {
+  margin-right: 5px;
+}
+
+header .icons .fa-ellipsis-v {
+  margin-right: 3px;
+}
