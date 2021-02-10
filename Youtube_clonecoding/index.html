@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/05ced5a9d7.js" crossorigin="anonymous"></script>
     <title>Youtube Mobile</title>
 </head>
 <body>
@@ -11,6 +12,8 @@
     <!-- Header -->
     <header>
         <div class="logo">
+            <!-- i: 텍스트에서 어떤 이유로 주위와 구분해야 하는 부분 의미
+            보통 기울임꼴로 표시 -->
             <i class="fab fa-youtube"></i>
             <span class="title">Youtube</span>
         </div>
@@ -22,17 +25,46 @@
 
     <!-- Video Player -->
     <section class="player">
-        <video controls width="250">
-
-            <source src="https://www.youtube.com/watch?v=67stn7Pu7s4"
-                    type="video/webm">
-        
-            <source src="https://www.youtube.com/watch?v=67stn7Pu7s4"
-                    type="video/mp4">
-        
-            Sorry, your browser doesn't support embedded videos.
-        </video>
+        <!-- 비디오 삽입 -->
+        <video controls width="1000" src="video/Ocean.mp4"></video>
     </section>
+    <!-- Video Info -->
+    <!-- metadata: 데이터에 관한 구조화된 데이터
+    다른 데이터를 설명해 주는 데이터 -->
+    <div class="metadata">
+        <ul class="hastags">
+            <li>#Dorang</li>
+            <li>#CloneCoding</li>
+            <li>#WEB Study</li>
+        </ul>
+        <div class="titleAndButton">
+            <span>
+                > 심신이 편해지는 영상
+            </span>
+            <button class="moreBtn">
+                <i class="fas fa-caret-down"></i>
+            </button>
+        </div>
+        <div class="views"></div>
+        <span class="views">1000만뷰</span>
+    </div>
+    <div class="action"></div>
+    <li>
+        <button><i class="fas fa-thumbs-up"></i><span>1000개</span></button>
+    </li>
+    <li>
+        <button><i class="fas fa-thumbs-down"></i><span>0개</span></button>
+    </li>
+    <li>
+        <button><i class="fas fa-share"></i><span>공유</span></button>
+    </li>
+    <li>
+        <button><i class="fas fa-plus"></i><span>저장</span></button>
+    </li>
+    <li>
+        <button><i class="fas fa-font-awesome-flag"></i><span>오류</span></button>
+    </li>
+    <div class="channel"></div>
     <section class="info"></section>
     <section class="UpNext"></section>
 </body>
