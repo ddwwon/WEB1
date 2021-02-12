@@ -55,6 +55,14 @@ header .icons .fa-search {
   margin-right: 5px;
 }
 
+/* 22분 51초 */
 header .icons .fa-ellipsis-v {
   margin-right: 3px;
+}
+
+/* Video Player */
+/* 비디오를 반응형으로 만들기 */
+.player video {
+  width: 100%;
+  height: 100%;
 }
